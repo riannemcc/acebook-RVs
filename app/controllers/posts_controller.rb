@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  respond_to :js
+
   def new
     @post = Post.new
   end
@@ -46,6 +48,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:message, :user_id)
+    params.require(:post).permit(:message, :user_id, :post)
   end
 end

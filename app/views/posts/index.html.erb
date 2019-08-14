@@ -30,9 +30,12 @@
 
         <br>
         <div id="newpostdiv">
+
        <%= javascript_include_tag('interface.js') %>
        <button onclick="newPost()"> New post </button>
-       <button onclick="submitPost()"> Submit Post </button>
+       <%= button_to "submit post", posts_path,
+      :remote => true,
+      :method => "post" %>
    </div>
   </body>
 

@@ -7,14 +7,24 @@ function newPost () {
   container.appendChild(input);
 }
 
-function submitPost() {
- Rails.ajax({
-   type: "POST",
-   url: "/posts/new",
-   data: String(message),
-   dataType: "html",
-   success: function(data) {
-     console.log(data);
-   }
- })
-}
+// function getUserId () {
+//   $.ajax({
+//     type: "GET",
+//     url: "/users/:id",
+//     success: function(data) {
+//       user_id = data.user_id;
+//     }
+//   })
+// }
+
+// function submitPost() {
+//   $.ajax({
+//     type: "POST",
+//     url: "/posts",
+//     data: {id: 4},
+//     dataType: "script",
+//     success: function(data) {
+//       console.log(data);
+//      }
+//   })
+// }
