@@ -14,8 +14,10 @@
 
         <% @posts.reverse_each do |post| %>
       <p>
-        <%= User.find(post.user_id).username %> 
+        <%= User.find(post.user_id).username %>
+        <br>
         <%= post.message %>
+        <br>
         (posted <%= time_ago_in_words(post.created_at)%> ago)
 
         <%= link_to edit_post_path(post.id) do %>
@@ -28,10 +30,10 @@
 
         <br>
         <div id="newpostdiv">
-        <%= javascript_include_tag('interface.js') %>
-        <button onclick="newPost()"> New post </button>
-
-    </div>
+       <%= javascript_include_tag('interface.js') %>
+       <button onclick="newPost()"> New post </button>
+       <button onclick="submitPost()"> Submit Post </button>
+   </div>
   </body>
 
   <%= link_to "Log out",session_path(session), method: :delete %>
