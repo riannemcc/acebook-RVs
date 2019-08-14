@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature "Timeline", type: :feature do
   scenario "Can edit posts and view updated post" do
-    visit "/posts"
+    visit "/"
     click_link "New post"
     fill_in "Message", with: "Hello, world!"
     click_button "Submit"

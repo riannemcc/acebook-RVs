@@ -5,26 +5,35 @@
     <head>
       <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+
       <body>
         <h1>Welcome to <span>&#9824;</span>cebook</<h1>
+
         <%= notice %>
         <%= flash[:error]%>
+
         <% @posts.reverse_each do |post| %>
-      <p><%= User.find(post.user_id).username %> <%= post.message %>
-      (posted <%= time_ago_in_words(post.created_at)%> ago)
+      <p>
+        <%= User.find(post.user_id).username %> 
+        <%= post.message %>
+        (posted <%= time_ago_in_words(post.created_at)%> ago)
+
         <%= link_to edit_post_path(post.id) do %>
           Edit
-        <% end %></p>
+        <% end %>
+
+        </p>
         <%=link_to 'Delete', post, method: :delete, data: { confirm: "Are you sure?"} %>
         <% end %>
-        <br>
-        <div>
-        <%= link_to new_post_path do %>
-          New post
-        <% end %>
-    </div>
 
+        <br>
+        <div id="newpostdiv">
+        <%= javascript_include_tag('interface.js') %>
+        <button onclick="newPost()"> New post </button>
+
+    </div>
   </body>
 
   <%= link_to "Log out",session_path(session), method: :delete %>
+
 </html>
