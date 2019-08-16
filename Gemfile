@@ -50,3 +50,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jquery-rails", "~> 4.3"
 
 gem 'responders'
+
+gem 'bootstrap'
+
+gem 'popper_js'
+
+gem 'turbolinks'

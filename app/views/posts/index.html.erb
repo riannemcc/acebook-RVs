@@ -20,9 +20,13 @@
         <br>
         (posted <%= time_ago_in_words(post.created_at)%> ago)
 
-        <%= link_to edit_post_path(post.id) do %>
-          Edit
-        <% end %>
+        <%= link_to 'Edit', edit_post_path(post.id),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'btn btn-primary btn-lg'}  %>
+        <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content"></div>
+          </div>
+        </div>
+
 
         </p>
         <%=link_to 'Delete', post, method: :delete, data: { confirm: "Are you sure?"} %>

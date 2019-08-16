@@ -25,8 +25,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(session[:user_id])
     if @post.user_id != @user.id
-      flash[:error] = "You can only edit your own posts"
-      redirect_to posts_path
+      respond_to do |format|
+        format.html
+        format.js
+      end
     else
       @post.update(post_params)
       redirect_to posts_path
