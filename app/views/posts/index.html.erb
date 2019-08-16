@@ -20,12 +20,12 @@
         <br>
         (posted <%= time_ago_in_words(post.created_at)%> ago)
 
-        <%= link_to 'Edit', edit_post_path(post.id),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'btn btn-primary btn-lg'}  %>
-        <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <a data-toggle="modal" data-target="#myModal" data-remote="<%= edit_post_path(post.id) %> #modal-edit-fields" class="btn btn-mini">Weigh out</a>
+        <!-- <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content"></div>
           </div>
-        </div>
+        </div> -->
 
 
         </p>
