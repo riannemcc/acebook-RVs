@@ -23,7 +23,7 @@ CD >> Heroku
 
 ## Links for working on this project
 
-The card wall with our to do list is here: https://trello.com/b/PFK2pnre/acebook
+The card wall with our to do list is here: [Trello board](https://trello.com/b/PFK2pnre/acebook)
 
 ## How to get started with this project
 
