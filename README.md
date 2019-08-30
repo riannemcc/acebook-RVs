@@ -104,6 +104,13 @@ Then visit localhost:3000.
 - We all feel a lot more confident with Rails.
 - We're all pretty pleased with the Front-End/aesthetics!  Turned out pretty well.  We were tempted to turn to a more sophistocated framework like React, but we're glad we didn't in the end as we had plenty on our plates already.
 
+A selection of whitboard action shots after our retros/stand-ups...
+![Imgur](https://i.imgur.com/7VxXyuw.jpg?1)
+![Imgur](https://i.imgur.com/000UoYf.jpg?1)
+![Imgur](https://i.imgur.com/AMUJDD1.jpg?1)
+![Imgur](https://i.imgur.com/QJneiKV.jpg?1)
+
+
 ## Future goals
 
 - None of us will probably revisit this project but if we did...  There are plenty more features we'd like to add.
