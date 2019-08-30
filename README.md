@@ -4,7 +4,7 @@
 
 ## The Task
 
-To make our first full stack, 2-week, group project from scratch; a Facebook clone called Acebook!
+To make our first full stack, 2-week, group project from scratch; a Facebook clone called <span>&#9824;</span>cebook!
 
 ## Our Approach
 
