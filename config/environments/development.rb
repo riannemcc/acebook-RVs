@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-
+  config.secret_key_base = 'a16e41a905aaab4e8338976d7132238c81b844b5085fb5dd0ac42befe2c6cd6f5c5bae9c712edcc8001193fb538d3a870a560b25e735a8c354094b125938b8cc'
   # Show full error reports.
   config.consider_all_requests_local = true
 

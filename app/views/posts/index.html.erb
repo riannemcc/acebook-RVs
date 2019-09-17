@@ -40,7 +40,7 @@
 
     <div id="all-posts">
       <% @posts.reverse_each do |post| %>
-        <% if !post.wall_id || post.wall_id == session[:user_id] %>
+        <% if !post.wall_id || post.wall_id == session[:user_id] || post.wall_id == post.user_id %>
           <%= render partial: 'post', locals: { post: post } %>
         <% end %>
       <% end %>

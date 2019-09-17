@@ -4,7 +4,7 @@
 
 ## The Task
 
-To make our first full stack, 2-week, group project from scratch; a Facebook clone called Acebook!
+To make our first full stack, 2-week, group project from scratch; a Facebook clone called <span>&#9824;</span>cebook!
 
 ## Our Approach
 
@@ -23,7 +23,7 @@ CD >> Heroku
 
 ## Links for working on this project
 
-The card wall with our to do list is here: https://trello.com/b/PFK2pnre/acebook
+The card wall with our to do list is here: [Trello board](https://trello.com/b/PFK2pnre/acebook)
 
 ## How to get started with this project
 
@@ -103,6 +103,13 @@ Then visit localhost:3000.
 - Our team worked together really well!  We had regular stand-ups every morning, follow by a quick planning and allocation.  We constantly communicated throughout, and had useful retros/merge parties at the end of the day.
 - We all feel a lot more confident with Rails.
 - We're all pretty pleased with the Front-End/aesthetics!  Turned out pretty well.  We were tempted to turn to a more sophistocated framework like React, but we're glad we didn't in the end as we had plenty on our plates already.
+
+A selection of whitboard action shots after our retros/stand-ups...
+![Imgur](https://i.imgur.com/7VxXyuw.jpg?1)
+![Imgur](https://i.imgur.com/000UoYf.jpg?1)
+![Imgur](https://i.imgur.com/AMUJDD1.jpg?1)
+![Imgur](https://i.imgur.com/QJneiKV.jpg?1)
+
 
 ## Future goals
 
